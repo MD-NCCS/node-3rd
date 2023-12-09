@@ -16,6 +16,9 @@ schema
 // Middleware to parse JSON in POST requests
 app.use(express.json());
 
+app.get('/', (req, res) =>{
+  res.send("To Check your password stength go to (/check-password) route!");
+});
 // Endpoint to check password strength
 app.post('/check-password', (req, res) => {
   const { password } = req.body;
