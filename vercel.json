@@ -7,12 +7,12 @@
       "config": {
         "serverFiles": ["server-middleware/**"]
       }
-    },
+    }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/",
+      "dest": "/"
     }
   ]
 }
